@@ -11,6 +11,7 @@ import IndiceGeneros from "./generos/IndiceGeneros";
 import CrearPeliculas from "./peliculas/CrearPeliculas";
 import EditarPeliculas from "./peliculas/EditarPeliculas";
 import FiltroPeliculas from "./peliculas/FiltroPeliculas";
+import RedireccionarALanding from "./utils/RedireccionarALanding";
 
 const rutas = [
   
@@ -32,7 +33,8 @@ const rutas = [
 
  // /:id(\\d+) sirve para indicar que el parametro es numerico
 
-  {path: '/', componente: LandingPages, exact: true}
+  {path: '/', componente: LandingPages, exact: true},
+  {path: '*', componente: RedireccionarALanding}
 
 ];
 
