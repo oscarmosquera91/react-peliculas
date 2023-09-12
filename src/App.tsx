@@ -3,6 +3,7 @@ import './App.css';
 import { landingPageDTO, pelicula } from './peliculas/peliculas.model';
 import ListadoPeliculas from './peliculas/ListadoPeliculas';
 import Button from './utils/Button';
+import Menu from './utils/Menu';
 
 function App() {
 
@@ -35,9 +36,8 @@ function App() {
 
   return (
     <>
+    <Menu/>
     <div className='container'>
-
-      <Button>Mi componenete boton</Button>
 
       <h3>En Cartelera</h3>
       <ListadoPeliculas peliculas={peliculas.enCartelera}/>
