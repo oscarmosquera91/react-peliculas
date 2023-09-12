@@ -7,24 +7,39 @@ export default function Menu(){
       <div className="container-fluid">
       <NavLink className="navbar-brand" 
                 activeClassName={claseActiva} 
-                to='/'>React Películas</NavLink>
-        {/* <a className="navbar-brand" 
-         href="/">
-          React Peliculas
-        </a> */}
+                to='/'>React Películas</NavLink>      
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-            <NavLink className="nav-link" activeClassName={claseActiva} 
-                            to='/generos'>
-                                Géneros
-                            </NavLink>
-              {/* <a
-                className="nav-link" 
-                href="/generos">
-                Generos
-              </a> */}
-            </li>            
+                <NavLink className="nav-link" activeClassName={claseActiva} 
+                  to='/generos'>
+                      Géneros
+                </NavLink>             
+            </li>
+            <li className="nav-item">
+                <NavLink className="nav-link" activeClassName={claseActiva} 
+                  to='/peliculas/filtrar'>
+                      Filtrar Peliculas
+                </NavLink>             
+            </li>   
+            <li className="nav-item">
+                <NavLink className="nav-link" activeClassName={claseActiva} 
+                  to='/actores'>
+                      Actores
+                </NavLink>             
+            </li>   
+            <li className="nav-item">
+                <NavLink className="nav-link" activeClassName={claseActiva} 
+                  to='/cines'>
+                      Cines
+                </NavLink>             
+            </li>   
+            <li className="nav-item">
+                <NavLink className="nav-link" activeClassName={claseActiva} 
+                  to='/peliculas/crear'>
+                      Crear Peliculas
+                </NavLink>             
+            </li>               
           </ul>
         </div>
       </div>
