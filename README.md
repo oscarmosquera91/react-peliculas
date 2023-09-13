@@ -48,3 +48,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Bootstrap
 npm i bootstrap@4.6 
+
+## Formik
+
+npm install formik2.2.6
