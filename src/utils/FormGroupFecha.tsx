@@ -14,7 +14,6 @@ export default function FormGroupFechas(props: formGroupFechasProps){
         defaultValue={values[props.campo]?.toLocaleDateString('en-CA')} 
         onChange={e=>{
            const fecha = new Date(e.currentTarget.value + 't00:00:00');
-           console.log(values);
            values[props.campo] = fecha;
            validateForm();
         }}
