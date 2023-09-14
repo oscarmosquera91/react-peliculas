@@ -5,6 +5,7 @@ import Button from "../utils/Button";
 import { Link } from "react-router-dom";
 import * as Yup from 'yup'
 import FormGroupFechas from "../utils/FormGroupFecha";
+import FormGroupImagen from "../utils/FormGroupImagen";
 
 export default function FormularioActores(props: formularioActoresProps){
   return(
@@ -21,6 +22,7 @@ export default function FormularioActores(props: formularioActoresProps){
           <Form>
             <FormGroupText campo="nombre" label="Nombre"/>
             <FormGroupFechas label="Fecha Nacimiento" campo="fechaNacimiento" />
+            <FormGroupImagen campo="foto" label="Foto" imagenURL={props.model.fotoURL}/>
             <Button disabled={formikProps.isSubmitting}
             type="submit">Salvar</Button>
             <Link className="btn btn-secondary" to="/actores">
