@@ -51,8 +51,15 @@ npm i bootstrap@4.6
 
 ## Formik
 
-npm install formik2.2.6
+npm install formik@2.2.6
+npm i yup@0.32.9  
+
 
 ## markdown
 
 npm i react-markdown typed-react-markdown
+npm i react-markdown typed-react-markdown
+
+ 
+
+
